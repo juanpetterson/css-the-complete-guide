@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 4.5rem auto 4.5rem;
+  color: white;
+  font-size: 2rem;
+  padding: 20px;
+  background: wheat;
+}
+
+header {
+  background: navy;
+  grid-column-end: span 4;
+}
+aside {
+  background: crimson;
+}
+
+main {
+  background: blue;
+  grid-column-end: span 3;
+}
+
+footer {
+  background: green;
+  grid-column-end: span 4;
+}
